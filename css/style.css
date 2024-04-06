@@ -1,0 +1,172 @@
+header {
+    background-color: #fff;
+
+    color: white;
+    padding: 10px 277px 10px 260px;
+    display: flex;
+    max-height: 92px;
+    align-items: center;
+}
+
+nav {
+  margin-right: 80px;
+    position: relative;
+    right: 10px;
+  
+}
+/* Estilos CSS para os links no header */
+nav a {
+
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+
+}
+
+/* Estilos CSS para o logo */
+.logo img {
+   width: 193px;
+   height: 37px;
+}
+
+/* Estilos CSS para o formulário de login e cadastro */
+.login-form {
+    display: flex;
+    align-items: center;
+    margin-left:88px;
+}
+
+.login-form input {
+    border: none;
+    text-align: center;
+    background-color: #fff;
+
+}
+
+.login-form button {
+    width: 148px;
+    height: 35px;
+    margin: 0 5px;
+    padding: 5px;
+    border-radius: 8px;
+    color: #fff;
+    border: #fff;
+}
+.logo a{
+    border: none;
+    
+}
+.search-bar { /* Por padrão, a barra de pesquisa está escondida */
+    display: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E9EDF5;
+    margin: 0;
+    padding: 0;
+}
+
+text-end{
+ padding: 20px;
+}
+.container-column {
+
+    max-width: 950px;
+    margin: 20px auto;
+}
+.container-column img {
+
+    max-width: 475px;
+}
+.column-a {
+    max-width: 475px;
+    flex-basis: calc(50% - 10px);
+    background-color: #E9EDF5;
+    padding: 20px;
+    box-sizing: border-box;
+    display: inline-block;
+
+}
+.column-b {
+max-width: 475px;
+
+align-items: center;
+
+}
+.column-c {
+    padding: 14px;
+    max-width: 475px;
+
+
+    
+}
+.column-c a{
+
+    gap: 30px;
+    size-adjust: 2px;
+ 
+}
+
+@media screen and (max-width: 300px) {
+    .container {
+        
+    }
+    }
+    .container-features {
+        background-color: #E9EDF5;
+        max-width: 1200px;
+        margin: 20px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .feature {
+        width: calc(33.33% - 20px);
+        background-color: #fff;
+        padding: 20px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+    }
+    .icon {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .title {
+        font-size: 18px;
+        margin-bottom: 5px;
+        display: flex;
+        align-items: center;
+    }
+    .badge {
+        background-color: #007bff;
+        color: #fff;
+        font-size: 12px;
+        padding: 3px 8px;
+        border-radius: 25px;
+       margin: 5px;
+    }
+    .description {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .link {
+        text-decoration: none;
+        color: #007bff;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+    .link:hover {
+        color: #0056b3;
+    }
+
+    @media screen and (max-width: 768px) {
+        .feature {
+            width: calc(50% - 20px);
+        }
+    }
+    @media screen and (max-width: 480px) {
+        .feature {
+            width: calc(100% - 20px);
+        }
+    }

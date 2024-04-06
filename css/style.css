@@ -1,6 +1,6 @@
 header {
     background-color: #fff;
-
+    
     color: white;
     padding: 10px 277px 10px 260px;
     display: flex;
@@ -171,4 +171,21 @@ align-items: center;
         }
     }
 
+.Container-carousel{
+    border: 1px solid cornflowerblue;
+    margin: 50px;
+    padding: 50px;
+    text-align: center;
+    justify-content: center;
+}
+     /* Customize the carousel styling here */
+     .carousel-item {
+        height: 300px;
+        max-width: 40%;
     
+      }
+      .carousel-item img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+      }

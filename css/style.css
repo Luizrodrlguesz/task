@@ -241,11 +241,14 @@ align-items: center;
 }
 
 .center-mockup{
-    max-width: 1250px;
-    border: #b30009 1px solid;
-    margin: 0 325px;
-    height: 700px;
-
+    background-color: #c65252;
+    max-width: 950px;
+    padding: 50px;
+    text-align: center;
+    justify-content: center;
+    height: 800px;
+    padding: 70px 70px 100px 70px;
+   
 }
 .column-mockup{
     border: #00b33c 2px solid;

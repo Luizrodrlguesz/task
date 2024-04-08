@@ -253,10 +253,12 @@ align-items: center;
 .column-mockup{
     border: #00b33c 2px solid;
     max-width: 1200px;
+    text-align:center;
 
 }
 .container-video{
     border: #0056b3 1px solid;
+    text-align: center;
 }
 .Container-carousel{
     

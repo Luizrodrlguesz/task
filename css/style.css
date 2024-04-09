@@ -121,7 +121,7 @@ nav a {
 
 body {
     font-family: "DM Sans", sans-serif;
-    background-color: #E9EDF5;
+    background-color: #e9edf57f;
     margin: 0;
     padding: 0;
 }
@@ -280,7 +280,7 @@ text-end{
 .column-a {
     max-width: 475px;
     flex-basis: calc(50% - 10px);
-    background-color: #E9EDF5;
+
     padding: 20px;
     box-sizing: border-box;
     display: inline-block;
@@ -288,9 +288,33 @@ text-end{
 }
 .column-b {
 max-width: 475px;
-
+position: relative;
+left: 10px;
 align-items: center;
 
+}
+.column-b .nav-bar{
+    margin-right: 10px;
+}
+.column-b ::placeholder{
+    padding: 5px;
+    font-size: small;
+    color: rgba(128, 128, 128, 0.499);
+}
+.column-b .nav-bar-size{
+    width: 300px;
+    padding:7px ;
+    border-radius: 5px;
+    border: none;
+}
+.column-b .text-buttom {
+font-size: 12px;
+color: #fff;
+padding: 10px;
+border-radius: 10px;
+border: #00b33c;
+width: 120px;
+height: 42px;
 }
 .column-c {
     padding: 15px;

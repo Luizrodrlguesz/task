@@ -27,11 +27,7 @@
          padding: 10px 210px 10px 210px;
      }
   }
-  @media (max-width: 380px){
-    .container-header header{
-        padding: 10px 180px 10px 180px;
-  }
-}
+
 @media (max-width: 360px){
     .container-header header{
         padding: 10px 205px 10px 205px;
@@ -174,7 +170,7 @@ text-end{
     margin-bottom: 20px;
 }
 .feature img{
-    margin: 20px 20px 10px 10px;
+    margin: 20px 20px 30px 10px;
 }
 .feature .title {
     font-weight: 600;
@@ -282,11 +278,13 @@ text-end{
 .link:hover {
     color: #0056b3;
 }
-/* INICIO RESPONSIVIDADE MOCKUP*/
-@media (max-width: 380px){
-    .column-c{
-    width: 235px;
-    }
+/* INICIO RESPONSIVIDADE column*/
+
+
+@media (max-width: 425px){
+    .column-c {
+    width: 350px;
+    }   
 }
 .container-column {
 
@@ -346,7 +344,7 @@ height: 42px;
     left: 10px;
 }
 
-/* INICIO RESPONSIVIDADE MOCKUP*/
+/* INICIO RESPONSIVIDADE Iphone SE*/
 @media (max-width: 380px){
     .center-mockup img {
     width: 235px;
@@ -358,11 +356,21 @@ height: 42px;
         width: 375px;
         height: 305px;
     }
+    .container-header header{
+        padding: 10px 180px 10px 180px;
   }
+  .column-c{
+    width: 235px;
+    }
+  }
+ 
   @media (max-width: 768px) {
     .mockup {
         width: 100%; /* Quando a largura da tela for menor que 768px, tornar cada mockup ocupando toda a largura */
     }
+}
+@media (max-width: 380px){
+
 }
 .center-mockup{
  
@@ -401,19 +409,22 @@ height: 42px;
     padding: 40px 20px 0 30px;
 }
 .container-video{
-    padding: 0 450px;
+    padding: 0;
 
     text-align: center;
 }
+.center-video {
+    padding: 40px;
+}
 .container-video h4{
-    padding: 10px;
+    padding: 0 10px 20px;
 }
 .container-video p{
-    padding: 10px 0;
+    margin: 0;
 }
 .container-video .link {
     display: block;
-    padding:0 0 20px;
+    padding:20px 0 20px;
     font-weight: 400;
 }
 /*RESPONSIVIDADE CARROSSEL*/

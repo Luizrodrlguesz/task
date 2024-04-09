@@ -1,3 +1,55 @@
+/*Responsividade HEADER*/
+@media (max-width: 1050px){
+    .container-header header .login-form img{
+        display: none;
+    }
+  }
+@media (max-width: 1024px) {
+    .container-header header nav a,
+    .container-header header nav button {
+      display: none;
+    }
+  }
+  @media (max-width: 920px){
+    .container-header header{
+        padding: 10px 400px 10px 400px;
+    }
+  }
+  @media (max-width: 750px) {
+    .container-header header .login-form img,
+    .container-header header button {
+      display: none;
+    }
+    .container-header header .login-form{
+        margin: 0;
+     }
+     .container-header header{
+         padding: 10px 210px 10px 210px;
+     }
+  }
+  @media (max-width: 380px){
+    .container-header header{
+        padding: 10px 180px 10px 180px;
+  }
+}
+@media (max-width: 360px){
+    .container-header header{
+        padding: 10px 205px 10px 205px;
+}
+}
+@media (max-width: 300px){
+    .container-header header{
+        padding: 10px 100px 10px 100px;
+}
+.container-header header .login-form input{
+    display: none;
+}
+.container-header header .logo{
+    padding-left:100px ;
+}
+}
+/*FIM Responsividade HEADER*/
+
 header {
     background-color: #fff;
     justify-content: center;
@@ -21,6 +73,8 @@ nav a {
     text-decoration: none;
 
 }
+
+
 
 /* Estilos CSS para o logo */
 .logo img {
@@ -58,9 +112,15 @@ nav a {
 .search-bar { /* Por padrão, a barra de pesquisa está escondida */
     display: none;
 }
+.container-header{
+    background-color: #007bff;
+}
+
+
+/**/
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "DM Sans", sans-serif;
     background-color: #E9EDF5;
     margin: 0;
     padding: 0;
@@ -202,6 +262,12 @@ text-end{
 .link:hover {
     color: #0056b3;
 }
+/* INICIO RESPONSIVIDADE MOCKUP*/
+@media (max-width: 380px){
+    .column-c{
+    width: 235px;
+    }
+}
 .container-column {
 
     max-width: 950px;
@@ -227,18 +293,28 @@ align-items: center;
 
 }
 .column-c {
-    padding: 14px;
-    max-width: 475px;
-
-
+    padding: 15px;
     
 }
-.column-c a{
-
-    gap: 30px;
-    size-adjust: 2px;
- 
+.column-c img{
+    width: 400px;
+    position: relative;
+    left: 10px;
 }
+
+/* INICIO RESPONSIVIDADE MOCKUP*/
+@media (max-width: 380px){
+    .center-mockup img {
+    width: 235px;
+    }
+    .column-mockup img{
+        width: 19px;
+    }
+    .container-video iframe {
+        width: 375px;
+        height: 305px;
+    }
+  }
 
 .center-mockup{
     background-color: #c65252;
@@ -260,6 +336,23 @@ align-items: center;
     border: #0056b3 1px solid;
     text-align: center;
 }
+
+/*RESPONSIVIDADE CARROSSEL*/
+@media (max-width: 380px){
+    .slider{
+        width: 235px;
+        height: 117px;
+    }
+    .slides{
+        width: 235px;
+        height: 117px;
+    }
+    .slider img{
+        width: 200px;
+        height: 100px;
+    }
+}
+
 .Container-carousel{
     
     background-color: #fff;

@@ -173,14 +173,34 @@ text-end{
     box-sizing: border-box;
     margin-bottom: 20px;
 }
+.feature img{
+    margin: 20px 20px 10px 10px;
+}
+.feature .title {
+    font-weight: 600;
+}
+.feature .badge{
+    padding: 7px 9px 6px;
+    font-size: 10px;
+}
+.feature .description {
+    text-align: start;
+    padding-right:20px ;
+}
+.feature .link{
+    position: relative;
+    right: 30px;
+    font-weight: 300;
+}
 @media screen and (max-width: 300px) {
     .container {
         
     }
     }
     .container-features {
+        
         background-color: #fff;
-        max-width: 1200px;
+        max-width: 1150px;
         margin: 20px auto;
         display: flex;
         flex-wrap: wrap;
@@ -189,7 +209,7 @@ text-end{
 
     .feature {
         width: calc(33.33% - 20px);
-        background-color: #dedede2d;
+
         padding: 20px;
         box-sizing: border-box;
         margin-bottom: 20px;
@@ -339,28 +359,63 @@ height: 42px;
         height: 305px;
     }
   }
-
+  @media (max-width: 768px) {
+    .mockup {
+        width: 100%; /* Quando a largura da tela for menor que 768px, tornar cada mockup ocupando toda a largura */
+    }
+}
 .center-mockup{
-    background-color: #c65252;
-    margin: 0;
-    padding: 50px;
-    text-align: center;
+ 
+    margin: 0 150px;
+
+    text-align: start;
     justify-content: center;
-    height: 800px;
-    padding: 70px 70px 100px 70px;
-   
+    height: 600px;
+    padding: 50px 80px ;
+   display: flex;
 }
 .column-mockup{
-    border: #00b33c 2px solid;
+
+
     max-width: 1200px;
     text-align:center;
 
 }
+.mockup{
+    width: 200px;
+    margin: 20px 0 0 30px;
+}
+.mockup-column{
+    display: flex;
+    box-sizing: border-box;
+    width: 550px;
+    flex-wrap: wrap;
+}
+.mockup-column2{
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+.mockup-a{
+    text-align: start;
+    padding: 40px 20px 0 30px;
+}
 .container-video{
-    border: #0056b3 1px solid;
+    padding: 0 450px;
+
     text-align: center;
 }
-
+.container-video h4{
+    padding: 10px;
+}
+.container-video p{
+    padding: 10px 0;
+}
+.container-video .link {
+    display: block;
+    padding:0 0 20px;
+    font-weight: 400;
+}
 /*RESPONSIVIDADE CARROSSEL*/
 @media (max-width: 380px){
     .slider{

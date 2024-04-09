@@ -170,8 +170,9 @@ text-end{
     margin-bottom: 20px;
 }
 .feature img{
-    margin: 20px 20px 30px 10px;
+    margin: 20px 20px 16px 10px;
 }
+
 .feature .title {
     font-weight: 600;
 }
@@ -185,7 +186,7 @@ text-end{
 }
 .feature .link{
     position: relative;
-    right: 30px;
+    right: 20px;
     font-weight: 300;
 }
 @media screen and (max-width: 300px) {
@@ -345,6 +346,33 @@ height: 42px;
 }
 
 /* INICIO RESPONSIVIDADE Iphone SE*/
+@media (max-width: 450px){
+    .service-bg{
+        padding-bottom: 100px;
+    }
+    .center-mockup {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centraliza os itens na direção do eixo transversal (vertical) */
+    }
+
+    .center-mockup .specific-image {
+        width: 100%; /* Para garantir que a imagem ocupe a largura máxima disponível */
+        max-width: 414px; /* Define a largura máxima da imagem para 414px */
+        margin-bottom: 20px; /* Adiciona um espaço inferior entre a imagem e o texto */
+        position: relative;
+        left: 5px;
+    }
+    .container-video{
+        padding-top: 100px;
+
+    }
+    .container-video iframe {
+        width: 350px; /* Define o tamanho do vídeo para 350px quando a largura da tela for igual ou menor que 450px */
+        height: auto; /* Para manter a proporção do vídeo */
+ 
+    }
+}
 @media (max-width: 380px){
     .center-mockup img {
     width: 235px;

@@ -353,7 +353,7 @@ height: 42px;
     left: 10px;
 }
 
-@media (max-width: 450px){
+@media (max-width: 540px){
     .column-b .text-end{
         margin-top: 8px;
     }

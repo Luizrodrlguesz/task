@@ -3,16 +3,25 @@
     .container-header header .login-form img{
         display: none;
     }
+    .slide img{
+        border-radius: 1px;
+    }
   }
 @media (max-width: 1024px) {
     .container-header header nav a,
     .container-header header nav button {
       display: none;
     }
+    .slide img{
+        border-radius: 1px;
+    }
   }
   @media (max-width: 920px){
     .container-header header{
         padding: 10px 400px 10px 400px;
+    }
+    .slide img{
+        border-radius: 1px;
     }
   }
   @media (max-width: 750px) {
@@ -26,6 +35,9 @@
      .container-header header{
          padding: 10px 210px 10px 210px;
      }
+     .slide img{
+        border-radius: 1px;
+    }
   }
 
 @media (max-width: 360px){
@@ -359,7 +371,7 @@ height: 42px;
     }
     .service-bg{
         padding-bottom: 100px;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
     .center-mockup {
         display: flex;
@@ -392,6 +404,7 @@ height: 42px;
 
 /* INICIO RESPONSIVIDADE Iphone SE*/
 @media (max-width: 420px){
+ 
     .column-b .text-end{
         margin-top: 8px;
     }
@@ -428,13 +441,49 @@ height: 42px;
  
     }
 }
+
+@media (max-width: 400px){
+ 
+    .column-b .text-end{
+        margin-top: 8px;
+    }
+    .service-bg{
+        padding-bottom: 100px;
+    }
+    .center-mockup {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centraliza os itens na direção do eixo transversal (vertical) */
+    }
+
+    .main-img{
+        position: relative;
+        right: 18px;
+    }
+  
+    .center-mockup .mockup-a{
+        padding: 10px 130px 10px 60px;
+
+    }
+    .center-mockup .mockup-column{
+        padding: 0 100px 0 70px;
+    }
+    .column-mockup .mockup-column2{
+        padding: 0 100px 0 70px;
+    }
+    .center-video {
+        margin-top: 120px; /* Adiciona um espaço de preenchimento superior de 100px quando a largura da tela for igual ou menor que 450px */
+    }
+    .container-video iframe {
+        width: 310px; /* Define o tamanho do vídeo para 350px quando a largura da tela for igual ou menor que 450px */
+        height: auto; /* Para manter a proporção do vídeo */
+ 
+    }
+}
+
 @media (max-width: 380px){
-    .center-mockup img {
-    width: 235px;
-    }
-    .column-mockup img{
-        width: 19px;
-    }
+ 
+   
     .container-video iframe {
         width: 375px;
         height: 305px;
@@ -468,6 +517,33 @@ height: 42px;
     .mockup {
         width: 100%; /* Quando a largura da tela for menor que 768px, tornar cada mockup ocupando toda a largura */
     }
+}
+
+
+@media (max-width: 280px){
+ 
+   
+    .container-video iframe {
+        width: 215px;
+
+  
+  }
+  .center-mockup .mockup-a{
+    padding: 10px 235px 10px 50px;
+
+}
+
+.main-img{
+    width: 50px;
+    position: relative;
+    right: 125px;
+}
+
+  @media (max-width: 768px) {
+    .mockup {
+        width: 100%; /* Quando a largura da tela for menor que 768px, tornar cada mockup ocupando toda a largura */
+    }
+}
 }
 
 .center-mockup{

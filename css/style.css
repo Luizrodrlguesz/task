@@ -358,9 +358,9 @@ height: 42px;
         flex-direction: column;
         align-items: center; /* Centraliza os itens na direção do eixo transversal (vertical) */
     }
-    
+
     .center-mockup .main-image {
-        margin: 0;
+        
     }
     .center-mockup .mockup-a{
         padding: 10px 100px 10px 70px;

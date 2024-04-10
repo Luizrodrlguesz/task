@@ -359,6 +359,7 @@ height: 42px;
     }
     .service-bg{
         padding-bottom: 100px;
+        margin-bottom: 20px;
     }
     .center-mockup {
         display: flex;
@@ -403,11 +404,13 @@ height: 42px;
         align-items: center; /* Centraliza os itens na direção do eixo transversal (vertical) */
     }
 
-    .center-mockup .main-image {
-        
+    .main-img{
+        position: relative;
+        right: 18px;
     }
+  
     .center-mockup .mockup-a{
-        padding: 10px 100px 10px 70px;
+        padding: 10px 130px 10px 60px;
 
     }
     .center-mockup .mockup-column{
@@ -439,24 +442,34 @@ height: 42px;
     .container-header header{
         padding: 10px 180px 10px 180px;
   }
-  .column-c{
-    width: 235px;
+  .container-column img{
+    width: 375px;
+  }
+  .column-c img{
+    width: 340px;
     }
     .container-video iframe {
         width: 320px; /* Define o tamanho do vídeo para 350px quando a largura da tela for igual ou menor que 450px */
         height: auto; /* Para manter a proporção do vídeo */
  
     }
+    .main-img{
+        position: relative;
+        right: 20px;
+    }
+  
   }
+  .center-mockup .mockup-a{
+    padding: 10px 135px 10px 60px;
+
+}
  
   @media (max-width: 768px) {
     .mockup {
         width: 100%; /* Quando a largura da tela for menor que 768px, tornar cada mockup ocupando toda a largura */
     }
 }
-@media (max-width: 380px){
 
-}
 .center-mockup{
  
     margin: 0 150px;

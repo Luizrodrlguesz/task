@@ -358,9 +358,7 @@ height: 42px;
         flex-direction: column;
         align-items: center; /* Centraliza os itens na direção do eixo transversal (vertical) */
     }
-    .service-bg{
-        padding-bottom:200px ;
-    }
+    
     .center-mockup .main-image {
         margin: 0;
     }

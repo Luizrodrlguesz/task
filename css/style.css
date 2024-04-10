@@ -345,6 +345,8 @@ height: 42px;
     left: 10px;
 }
 
+/* INICIO RESPONSIVIDADE Iphone SE*/
+@media (max-width: 420px){
     .column-b .text-end{
         margin-top: 8px;
     }
@@ -380,7 +382,7 @@ height: 42px;
         height: auto; /* Para manter a proporção do vídeo */
  
     }
-
+}
 @media (max-width: 380px){
     .center-mockup img {
     width: 235px;

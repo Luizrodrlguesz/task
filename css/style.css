@@ -398,6 +398,11 @@ height: 42px;
   .column-c{
     width: 235px;
     }
+    .container-video iframe {
+        width: 320px; /* Define o tamanho do vídeo para 350px quando a largura da tela for igual ou menor que 450px */
+        height: auto; /* Para manter a proporção do vídeo */
+ 
+    }
   }
  
   @media (max-width: 768px) {

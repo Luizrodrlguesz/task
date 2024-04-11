@@ -7,7 +7,7 @@
         border-radius: 1px;
     }
   }
-@media (max-width: 1024px) {
+@media (min-width:1020px)(max-width: 1024px) {
     .container-header header nav a,
     .container-header header nav button {
       display: none;
@@ -15,13 +15,19 @@
     .slide img{
         border-radius: 1px;
     }
+    .container-column{
+        padding: 0 25%;
+    }
   }
-  @media (max-width: 920px){
+  @media (min-width:750px) and (max-width: 920px){
     .container-header header{
         padding: 10px 400px 10px 400px;
     }
     .slide img{
         border-radius: 1px;
+    }
+    .container-column{
+        padding: 0 25%;
     }
   }
   @media (max-width: 750px) {
@@ -44,6 +50,9 @@
     .container-header header{
         padding: 10px 205px 10px 205px;
 }
+.container-column img{
+    max-width: 340px;
+  }
 }
 @media (max-width: 300px){
     .container-header header{
@@ -312,13 +321,15 @@ text-end{
     }
 }
 .container-column {
-
+    
     max-width: 950px;
     margin: 20px auto;
 }
 .container-column img {
 
-    max-width: 475px;
+    max-width: 365px;
+    position: relative;
+    right: 20px;
 }
 .column-a {
     max-width: 475px;
@@ -412,6 +423,9 @@ height: 42px;
     .column-b .text-end{
         margin-top: 8px;
     }
+    .column-c img{
+        left: 0;
+    }
     .service-bg{
         padding-bottom: 100px;
     }
@@ -423,7 +437,7 @@ height: 42px;
 
     .main-img{
         position: relative;
-        right: 18px;
+        right: 12px;
     }
   
     .center-mockup .mockup-a{
@@ -447,9 +461,14 @@ height: 42px;
 }
 
 @media (max-width: 400px){
- 
+    .column-main-img{
+        max-width: 390px;
+    }
     .column-b .text-end{
         margin-top: 8px;
+    }
+    .column-c img{
+        max-width: 350px;
     }
     .service-bg{
         padding-bottom: 100px;
@@ -461,8 +480,9 @@ height: 42px;
     }
 
     .main-img{
+        max-width: 390px ;
         position: relative;
-        right: 18px;
+        right: 15px;
     }
   
     .center-mockup .mockup-a{
@@ -496,10 +516,10 @@ height: 42px;
         padding: 10px 180px 10px 180px;
   }
   .container-column img{
-    width: 375px;
+    width: 330px;
   }
   .column-c img{
-    width: 340px;
+    width: 330px;
     }
     .container-video iframe {
         width: 320px; /* Define o tamanho do vídeo para 350px quando a largura da tela for igual ou menor que 450px */

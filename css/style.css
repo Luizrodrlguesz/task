@@ -8,16 +8,24 @@
         border-radius: 1px;
     }
   }
-@media (min-width:1020px)(max-width: 1024px) {
+@media (min-width:1020px) and (max-width: 1130px) {
     .container-header header nav a,
     .container-header header nav button {
       display: none;
+    }
+    .container-header header .login-form img{
+        display: none;
     }
     .slide img{
         border-radius: 1px;
     }
     .container-column{
         padding: 0 25%;
+    }
+  }
+  @media (min-width:750px) and (max-width: 1020px){
+    .container-header header .login-form img{
+        display: none;
     }
   }
   @media (min-width:750px) and (max-width: 920px){

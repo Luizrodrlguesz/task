@@ -56,6 +56,9 @@
         height: 75%;
         border-radius: 1px;
     }
+    .navigation-auto{
+    
+    }
   }
 
 @media (max-width: 360px){
@@ -425,6 +428,9 @@ height: 42px;
         height: auto; /* Para manter a proporção do vídeo */
  
     }
+    .navigation-auto{
+        margin: -100px -40px;
+    }
 }
 
 /* INICIO RESPONSIVIDADE Iphone SE*/
@@ -466,7 +472,10 @@ height: 42px;
     .container-video iframe {
         width: 350px; /* Define o tamanho do vídeo para 350px quando a largura da tela for igual ou menor que 450px */
         height: auto; /* Para manter a proporção do vídeo */
- 
+    
+    }
+    .navigation-auto{
+        margin: -200px -40px;
     }
     .slide img{
         width: 100%;
@@ -757,7 +766,7 @@ height: 42px;
     left: 47%;
     
     display: flex;
-    margin: 10px ;
+    padding: 10px ;
 
     gap: 13px;
     justify-content: center;

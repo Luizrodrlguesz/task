@@ -1,7 +1,8 @@
 /*Responsividade HEADER*/
-@media (max-width: 1050px){
-    .container-header header .login-form img{
-        display: none;
+@media (max-width: 1250px){
+    .container-header header nav a,
+    .container-header header nav button {
+      display: none;
     }
     .slide img{
         border-radius: 1px;
@@ -20,6 +21,10 @@
     }
   }
   @media (min-width:750px) and (max-width: 920px){
+    .container-header header nav a,
+    .container-header header nav button {
+      display: none;
+    }
     .container-header header{
         padding: 10px 400px 10px 400px;
     }
@@ -309,7 +314,7 @@ text-end{
 
 @media (max-width: 425px){
     .column-c {
-    width: 350px;
+    max-width: 350px;
     }   
     .center-video {
         margin-top: 120px; /* Adiciona um espaço de preenchimento superior de 100px quando a largura da tela for igual ou menor que 450px */
@@ -418,7 +423,7 @@ height: 42px;
 }
 
 /* INICIO RESPONSIVIDADE Iphone SE*/
-@media (max-width: 420px){
+@media (max-width: 435px){
  
     .column-b .text-end{
         margin-top: 8px;
@@ -437,7 +442,7 @@ height: 42px;
 
     .main-img{
         position: relative;
-        right: 12px;
+        right: 10px;
     }
   
     .center-mockup .mockup-a{
@@ -482,7 +487,7 @@ height: 42px;
     .main-img{
         max-width: 390px ;
         position: relative;
-        right: 15px;
+        right: 18px;
     }
   
     .center-mockup .mockup-a{
@@ -519,7 +524,7 @@ height: 42px;
     width: 330px;
   }
   .column-c img{
-    width: 330px;
+    max-width: 330px;
     }
     .container-video iframe {
         width: 320px; /* Define o tamanho do vídeo para 350px quando a largura da tela for igual ou menor que 450px */
@@ -527,11 +532,20 @@ height: 42px;
  
     }
     .main-img{
+        max-width: 320px;
         position: relative;
         right: 20px;
     }
   
   }
+  @media (max-width: 360px){
+    .main-img{
+        max-width: 320px;
+        position: relative;
+        right: 25px;
+    }
+  }
+
   .center-mockup .mockup-a{
     padding: 10px 135px 10px 60px;
 
@@ -558,7 +572,7 @@ height: 42px;
 }
 
 .main-img{
-    width: 50px;
+    max-width: 50px;
     position: relative;
     right: 125px;
 }

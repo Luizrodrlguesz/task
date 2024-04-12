@@ -250,7 +250,7 @@
     </div>
 
 
-    <div class="Container-carousel">
+    <div class="container-carousel">
         <div>
             <h1>
                 Simple Image Carousel
@@ -259,52 +259,43 @@
         </div>
         <div class="slider">
             
-            <div class="slides">
-                <!-- Radio buttons-->
-                <input type="radio" name="radio-btn" id="radio1">
-                <input type="radio" name="radio-btn" id="radio2">
-                <input type="radio" name="radio-btn" id="radio3">
-                <input type="radio" name="radio-btn" id="radio4">
-                <input type="radio" name="radio-btn" id="radio5">
-                
-              
-                <!-- slides images-->
-                <div class="slide first">
-                    <img src="img/carrossel-1.jpg" alt="montain1">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <!--Indicadores( traços para selecionar a imagem de preferência)-->
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
-                <div class="slide">
-                    <img src="img/carrossel-2.jpg" alt="montain2">
+                <!--Fim Indicadores-->
+    
+                <!--Inicio dos slides-->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/carrossel-1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/carrossel-2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/carrossel-3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <!--Fim dos slides-->
+                  <!-- Inicio do preview/next-->
                 </div>
-                <div class="slide">
-                    <img src="img/carrossel-3.jpg" alt="montain3">
-                </div>
-                <div class="slide">
-                    <img src="img/carrossel-4.jpg" alt="montain4">
-                </div>
-                <div class="slide">
-                    <img src="img/carrossel-5.jpg" alt="montain5">
-                </div>
-
-               
-                </div>
-                 <!--bolinhas de navegação-->
-                 <div class="navigation-auto">
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
-                    <div class="auto-btn4"></div>
-                    <div class="auto-btn5"></div>
-
-                </div>
+                <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+                <!--Fim do Preview/next-->
             </div>
-    </div>
-        <div class="manual-navigation">
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
-            <label for="radio4" class="manual-btn"></label>
-            <label for="radio5" class="manual-btn"></label>
+
         </div>
+          <!-- Biblioteca JavaScript do BootStrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     </div>
     <div class="container-footer">

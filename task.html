@@ -1,0 +1,91 @@
+<div class="carousel">
+    <div class="slides">
+        <!-- Radio buttons-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <input type="radio" name="radio-btn" id="radio5">
+        
+      
+        <!-- slides images-->
+        <div class="slide first">
+            <img src="img/carrossel-1.jpg" alt="montain1">
+        </div>
+        <div class="slide">
+            <img src="img/carrossel-2.jpg" alt="montain2">
+        </div>
+        <div class="slide">
+            <img src="img/carrossel-3.jpg" alt="montain3">
+        </div>
+        <div class="slide">
+            <img src="img/carrossel-4.jpg" alt="montain4">
+        </div>
+        <div class="slide">
+            <img src="img/carrossel-5.jpg" alt="montain5">
+        </div>
+    </div>
+     <!--bolinhas de navegação-->
+     <div class="navigation-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+        <div class="auto-btn4"></div>
+        <div class="auto-btn5"></div>
+    </div>
+</div>
+<div class="manual-navigation">
+    <label for="radio1" class="manual-btn"></label>
+    <label for="radio2" class="manual-btn"></label>
+    <label for="radio3" class="manual-btn"></label>
+    <label for="radio4" class="manual-btn"></label>
+    <label for="radio5" class="manual-btn"></label>
+</div>
+
+<script>
+    const slides = document.querySelectorAll('.slide');
+    const manualBtns = document.querySelectorAll('.manual-btn');
+    const autoBtns = document.querySelectorAll('.auto-btn');
+
+    let currentSlide = 0;
+
+    // Função para mostrar o slide atual
+    function showSlide(index) {
+        slides.forEach((slide) => {
+            slide.style.display = 'none';
+        });
+        slides[index].style.display = 'block';
+    }
+
+    // Evento de clique para os botões de navegação manual
+    manualBtns.forEach((btn, index) => {
+        btn.addEventListener('click', () => {
+            currentSlide = index;
+            showSlide(currentSlide);
+        });
+    });
+
+    // Função para avançar para o próximo slide
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+    }
+
+    // Função para avançar automaticamente os slides
+    function autoSlide() {
+        nextSlide();
+    }
+
+    // Intervalo para avançar automaticamente os slides
+    setInterval(autoSlide, 3000);
+
+    // Evento de clique para os botões de navegação automática
+    autoBtns.forEach((btn, index) => {
+        btn.addEventListener('click', () => {
+            currentSlide = index;
+            showSlide(currentSlide);
+        });
+    });
+
+    // Mostrar o primeiro slide ao carregar a página
+    showSlide(currentSlide);
